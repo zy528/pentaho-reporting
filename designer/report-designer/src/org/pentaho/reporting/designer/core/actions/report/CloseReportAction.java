@@ -94,7 +94,7 @@ public class CloseReportAction extends AbstractReportContextAction
           JOptionPane.WARNING_MESSAGE);
       if (option == JOptionPane.YES_OPTION)
       {
-        if ((new SaveReportAction()).saveReport(context, activeContext, context.getView().getParent()) == false)
+        if (SaveReportAction.saveReport(context, activeContext, context.getView().getParent()) == false)
         {
           return false;
         }
